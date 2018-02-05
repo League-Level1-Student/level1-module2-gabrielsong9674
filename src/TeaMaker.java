@@ -9,7 +9,8 @@ public class TeaMaker {
 	TeaBag tea = new TeaBag("Mint");
 	Kettle kettle = new Kettle();
 	Cup cup = new Cup();
-	kettle.getWater();
+	//kettle.getWater();
+	cup.makeTea(tea, kettle.getWater());
 	
 }
 
@@ -36,7 +37,7 @@ class Kettle {
 
 	private Water water = new Water();
 
-	public Water getWater() {
+	Water getWater() {
 		return water;
 	}
 
