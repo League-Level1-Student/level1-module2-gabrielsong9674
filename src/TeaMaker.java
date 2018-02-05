@@ -6,7 +6,11 @@
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea using the classes below */
-
+	TeaBag tea = new TeaBag("Mint");
+	Kettle kettle = new Kettle();
+	Cup cup = new Cup();
+	kettle.getWater();
+	
 }
 
 class TeaBag {
@@ -32,7 +36,7 @@ class Kettle {
 
 	private Water water = new Water();
 
-	Water getWater() {
+	public Water getWater() {
 		return water;
 	}
 
